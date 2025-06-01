@@ -1,91 +1,68 @@
-Greyhound Race Simulator
-Author: Manu Dorcil
-Date: 08 May 2025
-Language: C# (.NET Framework)
-Project Type: Console Application
-Purpose: Simulates a greyhound dog race with visual progress and ranking.
+# Greyhound Race Simulator  
+**Author:** Manu Dorcil  
+**Date:** 08 May 2025  
+**Language:** C# (Console App)  
+**Project:** AUT Programming Assignment – Greyhound Racing Simulation
 
-🎯 Description
-This program simulates a race between 6 to 8 user-named greyhounds. Users choose a race type (sprint, middle distance, or marathon), and the race is simulated round-by-round with randomly generated performance values.
+---
 
-Each round displays a live graph of each dog's progress using a visual star (*) system. At the end, the top 3 finishers are announced. The user has the option to restart and run another race without closing the program.
+## About  
+This program simulates a greyhound race where users can name between 6 and 8 dogs, choose the type of race (sprint, middle distance, or marathon), and watch each round of the race play out with live updates.
 
-🛠 Features
-Input validation for number of dogs and race type.
+Each dog gets a random score per round, and a simple graph using stars shows how far each dog has progressed. The race finishes by ranking the top 3 dogs. Users can run another race straight after without restarting the program.
 
-Three race lengths:
+---
 
-Sprint: 6 rounds
+## Features  
+- User names 6–8 greyhounds  
+- Race type selection:  
+  - Sprint (6 rounds)  
+  - Middle Distance (10 rounds)  
+  - Marathon (12 rounds)  
+- Randomised movement for each dog per round  
+- Star-based graph updates after each round to show progress  
+- Final total scores and placings displayed at the end  
+- Option to repeat the race without closing the program
 
-Middle Distance: 10 rounds
+---
 
-Marathon: 12 rounds
+## How to Use  
+1. Run the program in Visual Studio or another C# IDE.  
+2. Enter how many dogs are competing (between 6 and 8).  
+3. Enter each dog's name.  
+4. Choose the race type.  
+5. Watch the progress graph update each round.  
+6. View the final results and choose whether to run another race.
 
-Random scoring system per dog, per round.
+---
 
-Live visual feedback using stars * to represent total score/progress.
+## Sample Output (Progress Graph):
+```
+--- Round 3 of 6 ---
 
-Displays total score per dog.
+Buddy     : ****** (12)
+Shadow    : ***** (10)
+Rocket    : ******* (14)
+```
 
-Ranks and announces top 3 finishers.
+---
 
-Option to run multiple races in a single session.
+## Why I Built It  
+This assignment helped me practice:
+- Loops, conditionals, and input validation  
+- Working with 1D and 2D arrays  
+- Using random numbers  
+- Showing progress in a simple visual format  
+- Sorting totals and determining race winners
 
-🧪 How to Run
-Open the solution in Visual Studio or any C# IDE.
+It also helped me learn how to keep the program organised and responsive to user input.
 
-Build and run the program.
+---
 
-Follow the console prompts to:
-
-Enter number of dogs (6–8)
-
-Name each dog
-
-Select race type
-
-Watch the race progress
-
-At the end, choose whether to race again.
-
-📦 File Structure
-bash
-Copy
-Edit
-Assignment_Greyhound/
-│
-├── Program.cs     # Main C# program logic
-├── README.md      # Project overview and documentation
- Example Output (Live Race Snapshot)
-markdown
-Copy
-Edit
---- Round 3 of 10 ---
-
-Bolt      : ********** (10)
-Shadow    : ******** (8)
-Flash     : *********** (11)
-...
-✅ Requirements Met
-✅ User can run new races without restarting the program.
-
-✅ Live race graph with visual progress per dog (scaled star chart).
-
-✅ Valid input handling for dog count and race type.
-
-✅ 1D and 2D arrays for dynamic data storage.
-
-✅ Logical flow with loops, conditions, and sorting.
-
-Educational Purpose
-This project was developed to demonstrate:
-
-Control flow (loops, conditionals)
-
-Arrays and multi-dimensional data
-
-Random number generation
-
-Basic console UI and text-based graphics
-
-Object-oriented logic structuring (basic)
+## AUT Requirements Met
+- User names between 6 and 8 greyhounds  
+- User chooses race type (sprint, middle distance, or marathon)  
+- Race progress is based on random values  
+- Live race progress is visualised round-by-round  
+- Top 3 dogs are displayed at the end  
+- User can repeat the race without restarting
